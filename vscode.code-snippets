@@ -1,0 +1,42 @@
+{
+	"Console Log": {
+		"prefix": "cl",
+		"body": [
+			"console.log($0);",
+		],
+		"description": "Adds a nice console log statement, with two separator lines so it is easier to spot in the console."
+	},
+	"React component": {
+		"prefix": "rc",
+		"body": [
+			"// Libs",
+			"import React from 'react';",
+			"",
+			"// Utils",
+			"",
+			"// Components",
+			"",
+			"// Component",
+			"const ${1:ComponentName} = () => {",
+			"\treturn (",
+			"\t\t<div className='${2:ComponentClass}'>",
+			"\t\t</div>",
+			"\t)",
+			"}",
+			"",
+			"export default ${1:ComponentName};"
+		],
+		"description": "Scaffolds default React functional component with tab stops for Component name and className."
+	},
+	"Position absolute": {
+		"prefix": "pa",
+		"body": [
+			"position: absolute;",
+			"top: 0;",
+			"right: 0;",
+			"bottom: 0;",
+			"left: 0;"
+		],
+		"description": "Creates a quick default position absolute block"
+	},
+}
