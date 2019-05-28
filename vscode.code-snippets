@@ -6,6 +6,35 @@
 		],
 		"description": "Adds a nice console log statement, with two separator lines so it is easier to spot in the console."
 	},
+	"JavaScript class": {
+		"prefix": "jc",
+		"body": [
+			"class ${1:ComponentName} {",
+			"    constructor(element, options) {",
+			"        this._element = element;",
+			"        this._options = {...${1:ComponentName}.options, ...options};",
+			"",
+			"        this._init();",
+			"    }",
+			"",
+			"    static options = {}",
+			"",
+			"    _state = {}",
+			"",
+			"    _cacheSelectors() {}",
+			"",
+			"    _addEventListeners() {}",
+			"",
+			"    _init() {",
+			"        this._cacheSelectors();",
+			"        this._addEventListeners();",
+			"    }",
+			"}",
+			"",
+			"export default ${1:ComponentName};"
+		],
+		"description": "Scaffolds default React functional component with tab stops for Component name and className."
+	},
 	"React component": {
 		"prefix": "rc",
 		"body": [
@@ -21,8 +50,8 @@
 			"\treturn (",
 			"\t\t<div className='${2:ComponentClass}'>",
 			"\t\t</div>",
-			"\t)",
-			"}",
+			"\t);",
+			"};",
 			"",
 			"export default ${1:ComponentName};"
 		],
