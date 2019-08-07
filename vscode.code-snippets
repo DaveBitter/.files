@@ -9,7 +9,7 @@
 	"Comment": {
 		"prefix": "com",
 		"body": [
-			"/*** $0 ***/);",
+			"/*** $0 ***/",
 		],
 		"description": "Adds a nice commnent with some * so it is easier to spot in the file."
 	},
